@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.8'
 
 services:
 
@@ -51,7 +51,8 @@ services:
       - internal
     environment:
       WATCHPACK_POLLING: true
-    command: npm start
+    command:
+      /bin/sh -c "npm install && npm start"
 
 networks:
   internal:

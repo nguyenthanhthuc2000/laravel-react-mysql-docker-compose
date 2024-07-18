@@ -57,7 +57,3 @@ services:
 networks:
   internal:
     driver: bridge
-    
-volumes:
-  laravel-sync:
-    external: true
